@@ -6,10 +6,10 @@ import { Link } from 'react-router-dom'
 const Home = () => (
 
   <section className="section">
-  <div className="container has-text-centered">  
-    <h1>This is the Home page</h1>
-    <Link to="/UI" className="button">Get your options</Link>
-  </div>
+    <div className="container has-text-centered">  
+      <h1>This is the Home page</h1>
+      <Link to="/UI" className="button">Get your options</Link>
+    </div>
   </section>
 )
 

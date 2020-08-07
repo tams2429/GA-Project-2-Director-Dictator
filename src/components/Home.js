@@ -4,17 +4,19 @@ import { Link } from 'react-router-dom'
 
 
 const Home = () => (
-
-  <section className="section">
-    <div className="container has-text-centered">  
-      <h1>This is the Home page</h1>
-      <Link to="/UI" className="button">Get your options</Link>
-    </div>
-  </section>
+  <>
+    <section className="hero is-fullheight">
+      <div className="hero-body">
+        <div className="container has-text-centered">
+          <h1 className="title">THE DIRECTOR DICTATOR</h1>      
+          <Link to="/UI" className="button main-button">YOU WILL WATCH ...</Link>
+        </div>
+      </div>
+    </section>
+  </> 
 )
 
 export default Home
 
 
 
-{/* <Link to={`/cheeses/${cheese._id}/edit`} className="button is-warning">Edit Cheese</Link> */}

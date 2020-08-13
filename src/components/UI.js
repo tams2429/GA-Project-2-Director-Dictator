@@ -20,13 +20,13 @@ class UI extends React.Component {
     const randomIndex = Math.floor(Math.random() * 9000000)
     this.setState( { movie: null } )
     try {
-      console.log('tt' + randomIndex)
+      // console.log('tt' + randomIndex)
       const res = await getMovie('tt' + randomIndex)
 
       if (res.data.Response === 'True' && res.data.Type === 'movie' && res.data.Poster !== 'N/A') {
-        console.log('Its a movie', res.data.Title)
+        // console.log('Its a movie', res.data.Title)
         const moviesLeft = this.state.moviesLeft - 1
-        console.log('Number of movies left:', moviesLeft)
+        // console.log('Number of movies left:', moviesLeft)
         return this.setState( { movie: res.data, moviesLeft } )
       } 
       return this.getRandomMovie()

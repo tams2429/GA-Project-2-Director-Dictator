@@ -1,7 +1,7 @@
 import axios from 'axios'
 
 
-const baseURL = 'http://www.omdbapi.com/?i='
+const baseURL = 'https://cors-anywhere.herokuapp.com/www.omdbapi.com/?i='
 const apiKeyURL = '&apikey='
 // let IMDBid = "tt3896198"
 

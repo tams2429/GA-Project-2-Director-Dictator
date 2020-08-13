@@ -3,7 +3,7 @@ import React from 'react'
 import { getMovie } from '../lib/api'
 import { logState } from '../lib/logger'
 import { Link } from 'react-router-dom'
-// import RandomID from './RandomID'
+
 
 class UI extends React.Component {
 
@@ -35,6 +35,10 @@ class UI extends React.Component {
     }
   }
 
+  handleSounds = () => {
+    this.setState({ playSound: true })
+  }
+
   componentDidMount() {
     this.getRandomMovie()
   }
@@ -44,21 +48,10 @@ class UI extends React.Component {
 
   render() {
     // if (!this.state.movie) return null
-    logState()
+    // logState()
     return (
       <>
         {this.state.movie ? 
-          // <div>
-          //   <h1>{this.state.movie.Title}</h1>
-          //   <p>Year:{this.state.movie.Year}</p>
-          //   <div>
-          //     <a href={`https://www.imdb.com/title/${this.state.movie.imdbID}`}><img src={this.state.movie.Poster}></img></a>
-          //   </div>
-          //   <p>Genre: {this.state.movie.Genre}</p>
-          //   <p>IMDB rating: {this.state.movie.imdbRating}</p>
-          //   <p>We rate it: 10</p>    
-          //   <button onClick={this.getRandomMovie}>Generate Movie</button>
-          // </div>
           <section className="hero is-fullheight UI">
             <div className="hero-body">
               <div className="columns">
@@ -110,19 +103,11 @@ class UI extends React.Component {
               </div>
             </div>
           </section>
-            
-
-          
         }
       </>
-      
-      
     )
   }
 }
 
 export default UI
 
-
-//* Ratings filter
-// && parseFloat(res.data.imdbRating) <= 10

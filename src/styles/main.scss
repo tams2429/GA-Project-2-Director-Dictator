@@ -96,6 +96,11 @@ div {
   flex-direction: column;
   font-size: 2em;
 }
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .spinner-img {
   background-image: url('./images/Reload-2s-217px.png');
   width: 200px;

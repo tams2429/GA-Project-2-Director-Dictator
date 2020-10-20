@@ -112,4 +112,4 @@ One of the **challenges** of this project was the **delegation of work** since t
 
 ## Credits 🙇‍♂️ 🙇‍♀️
 
-I would like to thank my fellow team members, **Dan Irons** & **Dan Price**, without whom, this **project would not be as successful and complete** as it is given the **tight timeframe**.
+I would like to thank my fellow team members, **Dan Irons** & **Dan Price**, without whom, this **project would not be as successful and complete** given the **tight timeframe**.
